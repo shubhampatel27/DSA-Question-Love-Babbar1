@@ -1,0 +1,26 @@
+class Solution {
+    public int subtractProductAndSum(int n) {
+      
+    // Initialize variables to store the sum and product of the digits
+    int digit_sum = 0;
+    int digit_product = 1;
+
+    // Set a counter to keep track of the number of digits
+    int digit_count = 0;
+
+    // Iterate through the digits of the integer by continuously dividing it by 10 until it becomes zero
+    for (; n != 0; n /= 10) {
+        // Get the current digit by taking the remainder of n when divided by 10
+        int digit = n % 10;
+        // Add the digit to the sum
+        digit_sum += digit;
+        // Multiply the digit by the current product
+        digit_product *= digit;
+        // Increment the digit count
+        digit_count++;
+    }
+
+    // Subtract the sum from the product and return the result
+    return digit_product - digit_sum;
+}
+}
