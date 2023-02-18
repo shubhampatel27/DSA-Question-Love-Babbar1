@@ -1,8 +1,7 @@
 #include<bits/stdc++.h> 
 using namespace std;
-/****************************************************************
 
-    Following is the class structure of the LinkedListNode class:
+
 
     template <typename T>
     class LinkedListNode
@@ -17,9 +16,9 @@ using namespace std;
         }
     };
 
-*****************************************************************/
 
-void reverse(LinkedListNode<int>* &head,LinkedListNode<int>* &prev,LinkedListNode<int>* &curr){
+
+void reverse (LinkedListNode<int>* &head,LinkedListNode<int>* &prev,LinkedListNode<int>* &curr) {
 
     
 
